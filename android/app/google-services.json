@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "57870100982",
+    "project_id": "ai-order-bot",
+    "storage_bucket": "ai-order-bot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57870100982:android:5a6090c1e823377dbdbfd7",
+        "android_client_info": {
+          "package_name": "com.example.ai_order_bot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB0fU4Nkns8DcCIqPvA-T2i7PTBxv58P8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

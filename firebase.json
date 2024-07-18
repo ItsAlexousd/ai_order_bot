@@ -1,0 +1,30 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ai-order-bot",
+          "appId": "1:57870100982:android:5a6090c1e823377dbdbfd7",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "ai-order-bot",
+          "appId": "1:57870100982:ios:4d0b0daadc23ce11bdbfd7",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ai-order-bot",
+          "configurations": {
+            "android": "1:57870100982:android:5a6090c1e823377dbdbfd7",
+            "ios": "1:57870100982:ios:4d0b0daadc23ce11bdbfd7"
+          }
+        }
+      }
+    }
+  }
+}
