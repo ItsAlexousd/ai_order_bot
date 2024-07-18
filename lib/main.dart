@@ -1,26 +1,20 @@
 import 'package:ai_order_bot/firebase_options.dart';
+import 'package:ai_order_bot/src/app_bootstrap.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  runApp(const App());
-}
 
-class App extends StatelessWidget {
-  const App({super.key});
+  // Create an app bootstrap instance
+  final appBootstrap = AppBootstrap();
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'AI Order Bot',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('AI Order Bot 🤖'),
-        ),
-      ),
-      debugShowCheckedModeBanner: false,
-    );
-  }
+  // Create the root widget
+  final root = appBootstrap.createRootWidget();
+
+  // Start the app
+  runApp(root);
 }
