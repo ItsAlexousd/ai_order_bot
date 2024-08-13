@@ -1,13 +1,8 @@
-import 'dart:async';
-import 'dart:developer';
-import 'dart:io';
-
 import 'package:ai_order_bot/src/app/app.dart';
 import 'package:ai_order_bot/src/exceptions/exceptions.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:intl/intl.dart';
 
 /// Helper class to initialize services and configure the error handlers.
 class AppBootstrap {
@@ -52,17 +47,4 @@ class AppBootstrap {
       );
     };
   }
-}
-
-Future<void> bootstrap() async {
-  await runZonedGuarded(
-    () async {
-      // Set the default locale
-      Intl.defaultLocale = Platform.localeName;
-    },
-    (error, stackTrace) {
-      // Handle any errors in the zone
-      log(error.toString(), stackTrace: stackTrace);
-    },
-  );
 }
